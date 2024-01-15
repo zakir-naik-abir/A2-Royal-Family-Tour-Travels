@@ -1,0 +1,71 @@
+/* 
+Template Name:
+Template URL:
+Description: 
+Author: Zakir Naik
+Author URL: 
+Version: 
+*/
+/* Google Font Import -  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@400;700;800&display=swap');
+/* ===============default-css-start=============== */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    height: 100vh;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.btn-primary{
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    background-color: #FF5400;
+    color: #FFF;
+}
+/* ===============default-css-end=============== */
+
+
+/* ===============-start=============== */
+/* ===============-end=============== */
+
+/* ===============-start=============== */
+/* ===============-end=============== */
+
+/* ===============-start=============== */
+/* ===============-end=============== */
+
+/* ===============-start=============== */
+/* ===============-end=============== */
+
+/* ===============-start=============== */
+/* ===============-end=============== */
+
+/* ===============-start=============== */
+/* ===============-end=============== */
+
+/* ===============-start=============== */
+/* ===============-end=============== */
+
+/* ===============-start=============== */
+/* ===============-end=============== */
+
+/* ===============-start=============== */
+/* ===============-end=============== */
