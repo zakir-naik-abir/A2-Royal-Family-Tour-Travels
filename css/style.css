@@ -259,7 +259,7 @@ section{
     font-size: 28px;
 }
 /* ===============-end=============== */
-/* ==============================-start============================== */
+/* ==============================choose-section-start============================== */
 .choose-section .title{
     text-align: center;
     margin-bottom: 24px;
@@ -272,9 +272,21 @@ section{
 }
 .first .hotel{
     background-color: rgb(193, 151, 172);
+    padding: 32px;
+    border-radius: 8px;
+}
+.first .hotel h3{
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 .first .service{
     background-color: rgb(172, 221, 204);
+    padding: 32px;
+    border-radius: 8px;
+}
+.first .service h3{
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 .choose-section .second{
     display: flex;
@@ -282,6 +294,12 @@ section{
 }
 .second .service{
     background-color: rgb(193, 151, 172);
+    padding: 32px;
+    border-radius: 8px;
+}
+.second .service h3{
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 /* ==============================-start============================== */
 .deals-discounts .tour-1, .deals-discounts .tour-3{
@@ -310,7 +328,71 @@ section{
 /* ==============================-start============================== */
 /* ===============-end=============== */
 
-/* ==============================-start============================== */
+/* ==============================all-packages-start============================== */
+.all-packages{
+    margin-top: 100px;
+}
+.all-packages .btn{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.section-1{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 100px;
+}
+.description > .btn-primary{
+    padding: 14px 41px;
+}
+.video-box{
+    background-image: url('../img/Group 40089.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 100%;
+}
+.video-box h3{
+    padding: 170px 162px;
+    color: var(--white);
+    text-align: center;
+}
+
+/* ===============-end=============== */
+/* ==============================footer-start============================== */
+.section-2{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 24px;
+}
+.section-2 > div{
+    padding: 20px;
+    border: 1px solid var(--tomato);
+    border-radius: 8px;
+}
+.sign p{
+    margin: 16px 0 24px;
+}
+.sign input{
+    color: var(--halka-black);
+    font-size: 16px;
+    margin-top: 24px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    width: 100%;
+    padding: 16px 0 16px 20px;
+    border: none;
+}
+.section-2 > .banner{
+background-image: url(../img/Rectangle\ 8\ \(1\).png);
+position: relative;
+}
+.banner .btn-box{
+    position: absolute;
+    margin-bottom: 0px;
+    margin-right: -20px;
+}
 /* ===============-end=============== */
 
 /* ==============================footer-start============================== */
