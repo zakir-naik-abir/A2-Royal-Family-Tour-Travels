@@ -18,6 +18,7 @@ Version:
 }
 body{
     height: 100vh;
+    min-width: 992px;
 }
 li{
     list-style: none;
@@ -37,35 +38,336 @@ p{
     border: none;
     border-radius: 5px;
     padding: 15px 25px;
-    background-color: #FF5400;
+    background-color: var(--tomato);
     color: #FFF;
 }
-/* ===============default-css-end=============== */
+h2{
+    color: var(--black);
+    font-size: 40px;
+}
+h3{
+    color: var(--black);
+    font-size: 24px;
+}
+:root{
+    --black: #131318;
+    --tomato: #FF5400;
+    --halka-black: #424247;
+    --white: #FFF;
+}
+/* ==============================default-css-end============================== */
 
 
-/* ===============-start=============== */
+/* ===============header-start=============== */
+header{
+    margin: 30px 100px 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar{
+    display: none;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 55px;
+}
+.logo h1{
+    color: var(--black);
+    font-size: 36px;
+    font-weight: 800;
+    font-family: Mulish;
+}
+span{
+    color: var(--tomato);
+}
+.menu ul{
+    display: flex;
+    gap: 44px;
+}
+.menu a{
+    color: var(--halka-black);
+    font-size: 18px;
+    font-weight: 400;
+    transition: .2s ease-in-out;
+}
+.menu a:hover{
+    color: #FF5400;
+}
+
+/* ===============header-end=============== */
+
+/* ==============================banner-start============================== */
+/* ===============banner-end=============== */
+section{
+    margin: 20px 100px;
+}
+.banner{
+    background-image: url('../img/Group 13.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 10px;
+}
+.banner h1{
+    color: var(--white);
+    font-size: 64px;
+    padding: 100px 0 23px;
+}
+.banner p{
+    color: var(--white);
+    padding-bottom: 45px;
+}
+.banner > div{
+    padding-bottom: 20px;
+}
+.find{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0 170px 100px 170px;
+    gap: 23px;
+}
+.find div{
+    display: flex;
+    justify-content: space-between;
+    color: var(--halka-black);
+    background-color: var(--white);
+    border-radius: 7px;
+    padding: 16px;
+    width: 170px;
+    align-items: center;
+}
+.find .btn-primary{
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    background-color: var(--tomato);
+    color: #FFF;
+}
+.find div input{
+    font-size: 16px;
+    background-color: transparent;    
+    border: none;
+    outline: none;
+}
+
+/* ==============================-start============================== */
+.tour-section{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.description h2{
+    margin-bottom: 23px;
+    column-gap: 10px;
+}
+.description div{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    margin: 23px 0;
+}
+.description div i{
+    color: var(--halka-black);
+    font-size: 9px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.description .btn-primary{
+    margin-top: 24px;
+}
 /* ===============-end=============== */
 
-/* ===============-start=============== */
+/* ==============================-start============================== */
+.destination{
+    margin: 100px 0px;
+    text-align: center
+
+}
+.destination h2{
+    margin-bottom: 23px;
+}
+.destination .country{
+    margin-top: 48px;
+    display: grid;
+    grid-template-rows:  1fr;
+    gap: 20px;
+}
+.country .first{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 20px;
+}
+.country .second{
+    display: grid;
+    grid-template-columns: 1.3fr 1.8fr 1fr;
+    gap: 20px;
+}
+.country .third{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+}
+.country .box-1{
+    background-image: url(../img/Rectangle\ 5.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}.country .box-2{
+    background-image: url(../img/Rectangle\ 8.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}.country .box-3{
+    background-image: url(../img/Rectangle\ 6.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}.country .box-4{
+    background-image: url(../img/Rectangle\ 7.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}.country .box-5{
+    background-image: url(../img/Rectangle\ 9.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}.country .box-6{
+    background-image: url(../img/Rectangle\ 11.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}.country .box-7{
+    background-image: url(../img/Rectangle\ 10.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.country .banner{
+    display: flex;
+    height: 290px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.banner h3{
+    color: var(--white);
+    font-size: 28px;
+}
+/* ===============-end=============== */
+/* ==============================-start============================== */
+.choose-section .title{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.choose-section .first{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px
+}
+.first .hotel{
+    background-color: rgb(193, 151, 172);
+}
+.first .service{
+    background-color: rgb(172, 221, 204);
+}
+.choose-section .second{
+    display: flex;
+    justify-content: center;
+}
+.second .service{
+    background-color: rgb(193, 151, 172);
+}
+/* ==============================-start============================== */
+.deals-discounts .tour-1, .deals-discounts .tour-3{
+    background-image: url('../img/Group 39.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+    /* padding: 50px 50px 50px -50px; */
+}
+.deals-discounts .tour-2{
+    background-image: url('../img/Group\ 40.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.tour-1 .description, .tour-3 .description{
+    background-color: var(--white);
+    opacity: .9;
+    width: 500px;
+}
+.tour-2 .description{
+    background-color: var(--white);
+    opacity: .9;
+    width: 500px;
+}
 /* ===============-end=============== */
 
-/* ===============-start=============== */
+/* ==============================-start============================== */
 /* ===============-end=============== */
 
-/* ===============-start=============== */
+/* ==============================-start============================== */
 /* ===============-end=============== */
 
-/* ===============-start=============== */
+/* ==============================footer-start============================== */
+footer{
+    margin-top: 100px;
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+footer > div {
+    padding: 60px 280px;
+}
+footer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 55px;
+}
+.socila-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+.socila-media a{
+    font-size: 30px;
+    color: var(--black);
+}
+footer h5{
+    margin-top: 20px;
+    color: var(--black);
+    font-size: 16px;
+}
 /* ===============-end=============== */
 
-/* ===============-start=============== */
-/* ===============-end=============== */
 
-/* ===============-start=============== */
-/* ===============-end=============== */
 
-/* ===============-start=============== */
-/* ===============-end=============== */
-
-/* ===============-start=============== */
+/* =============================================mobile-devices-start============================================= */
+@media screen and (max-width:600px) {
+    header{
+        margin: 18px 20px;
+    }
+    .logo img{
+        width: 40px;
+    }
+    .logo img h1{
+        font-size: 15px;
+    }
+    .menu ul{
+        display: none;
+    }
+    .bar{
+        display: block;
+        margin-right: 0px;
+    }
+}
 /* ===============-end=============== */
