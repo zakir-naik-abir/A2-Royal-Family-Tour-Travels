@@ -111,6 +111,7 @@ span{
 section{
     margin: 20px 100px;
 }
+
 .banner{
     background-image: url('../img/Group 13.png');
     background-position: center;
@@ -122,10 +123,12 @@ section{
     color: var(--white);
     font-size: 64px;
     padding: 100px 0 23px;
+    z-index: 100;
 }
 .banner p{
     color: var(--white);
     padding-bottom: 45px;
+    z-index: 100;
 }
 .banner > div{
     padding-bottom: 20px;
@@ -305,26 +308,40 @@ section{
     margin-bottom: 16px;
 }
 /* ==============================-start============================== */
+.deals-discounts > h2{
+    text-align: center;
+    margin: 100px 0 20px;
+}
+.deals-discounts > p{
+    text-align: center;
+    margin-bottom: 30px;
+}
 .deals-discounts .tour-1, .deals-discounts .tour-3{
     background-image: url('../img/Group 39.png');
     background-position: cover;
     background-repeat: no-repeat;
-    /* padding: 50px 50px 50px -50px; */
+    padding: 50px 50px 50px 0px;
 }
 .deals-discounts .tour-2{
     background-image: url('../img/Group\ 40.png');
     background-position: cover;
     background-repeat: no-repeat;
+    padding: 50px 50px 50px 50px;
 }
 .tour-1 .description, .tour-3 .description{
     background-color: var(--white);
     opacity: .9;
     width: 500px;
+    transform: translateX(560px);
+    padding: 50px;
+    border-radius: 10px;
 }
 .tour-2 .description{
     background-color: var(--white);
     opacity: .9;
     width: 500px;
+    padding: 50px;
+    border-radius: 10px;
 }
 /* ===============-end=============== */
 
@@ -388,11 +405,10 @@ section{
     border: none;
 }
 .section-2 > .banner{
-background-image: url(../img/Rectangle\ 8\ \(1\).png);
-position: relative;
+    background-image: url(../img/Rectangle\ 8\ \(1\).png);
 }
 .banner .btn-box{
-    position: absolute;
+    transform: translate(170px, 250px) rotate(-20deg);
     margin-bottom: 0px;
     margin-right: -20px;
 }
@@ -449,7 +465,7 @@ footer h5{
     }
 
     header{
-        margin: 18px 20px;
+        margin: 18px 20px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -475,7 +491,10 @@ footer h5{
         margin: 0px 18px;
     }
     .banner{
+        display: block;
         width: 335px;
+        margin-top: 0;
+        height: 700px;
     }
     .banner h1{
         font-size: 22px;
@@ -488,7 +507,7 @@ footer h5{
     .find{
         display: block;
         margin: 18px;
-        /* padding: none; */
+        padding-bottom: 30px;
     }
     .find div{
         padding: 15px;
@@ -506,11 +525,8 @@ footer h5{
         margin: 18px;
         width: 335px;
     }
-    .img{
-        margin-top: 10px;
-        padding-top: 10px;
-        max-width: 935px;
-        
+    .tour-section .img{   
+        display: none;
     }
 
     /* destination */
@@ -532,6 +548,7 @@ footer h5{
     .country .second{
         display: grid;
         grid-template-columns: auto;
+        margin-top: 20px;
     }
     .country .third{
         display: grid;
@@ -559,8 +576,9 @@ footer h5{
     .deals-discounts{
         width: 335px;
     }
-    .deals-discounts .tour-1, .deals-discounts .tour-3{
+    .deals-discounts .tour-1,.deals-discounts .tour-2, .deals-discounts .tour-3{
         width: 335px;
+        display: none;
     }
     .description p{
         width: 335px;
@@ -582,6 +600,10 @@ footer h5{
         display: grid;
         grid-template-columns: 1fr ;
     }
+    .banner .btn-box{
+        transform: translate(30px, 300px) rotate(-20deg);
+        margin-bottom: 0px;
+    }
     .video-box{
         width: 335px;
         border-radius: 10px;
@@ -592,7 +614,7 @@ footer h5{
     }
     /* footer */
     footer{
-        width: 375px;
+        width: 380px;
     }
     footer > div {
         padding: 60px 0px;
