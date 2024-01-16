@@ -34,6 +34,9 @@ p{
     font-weight: 400;
     line-height: 26px;
 }
+.hide{
+    display: none;
+}
 .btn-primary{
     border: none;
     border-radius: 5px;
@@ -435,8 +438,22 @@ footer h5{
 
 /* =============================================mobile-devices-start============================================= */
 @media screen and (max-width:600px) {
+
+    h1{
+        font-size: 22px;
+    }
+    h2,h3{
+        font-size: 20px;    }
+    p{
+        font-size: 14px;
+    }
+
     header{
         margin: 18px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 335px;
     }
     .logo img{
         width: 40px;
@@ -444,12 +461,141 @@ footer h5{
     .logo img h1{
         font-size: 15px;
     }
-    .menu ul{
+    .menu{
         display: none;
     }
     .bar{
         display: block;
         margin-right: 0px;
+        margin-left: 50px;
+    }
+
+    /* section */
+    section{
+        margin: 0px 18px;
+    }
+    .banner{
+        width: 335px;
+    }
+    .banner h1{
+        font-size: 22px;
+        padding-top: 50px;
+    }
+    .banner p{
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+    .find{
+        display: block;
+        margin: 18px;
+        /* padding: none; */
+    }
+    .find div{
+        padding: 15px;
+        align-items: center;
+        width: 275px;
+        margin: 10px 0; 
+    }
+    .find div input{
+        margin: 5px 0;
+    }
+
+    /* .tour-section */
+    .tour-section{
+        display: block;
+        margin: 18px;
+        width: 335px;
+    }
+    .img{
+        margin-top: 10px;
+        padding-top: 10px;
+        max-width: 935px;
+        
+    }
+
+    /* destination */
+    .destination{
+        margin: 0;
+        text-align: left;
+    }
+    .destination p{
+        width: 335px;
+    }
+    .destination .country{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .country .first{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .country .second{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .country .third{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+
+    /* .choose-section */
+    .choose-section{
+        width: 335px;
+    }
+    .choose-section .title{
+        text-align: start;
+        margin-top: 10px;
+        width: 335px;
+    }
+    .choose-section .first{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    /* .deals-discounts .tour-1, .deals-discounts .tour-3 */
+    .deals-discounts{
+        width: 335px;
+    }
+    .deals-discounts .tour-1, .deals-discounts .tour-3{
+        width: 335px;
+    }
+    .description p{
+        width: 335px;
+    }
+
+    /* all-packages */
+    .all-packages{
+        width: 335px;
+    }
+    .all-packages .btn{
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .section-1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section-2{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .video-box{
+        width: 335px;
+        border-radius: 10px;
+    }
+    .section-2 > .banner{
+        width: 335px;
+        width: 335;
+    }
+    /* footer */
+    footer{
+        width: 375px;
+    }
+    footer > div {
+        padding: 60px 0px;
     }
 }
 /* ===============-end=============== */
